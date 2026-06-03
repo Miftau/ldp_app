@@ -1,0 +1,26 @@
+{
+  "methods_applied": [
+    "SHAP",
+    "LIME",
+    "Consensus Feature Selection"
+  ],
+  "explainability_type": "Post-hoc Global & Local",
+  "model_explained": "Final Soft Voting Ensemble + RF Pipeline",
+  "features_explained": [
+    "Enzyme_Load",
+    "Bili_AST_Interaction",
+    "Bilirubin_Protein",
+    "Alamine_Aminotransferase_log",
+    "ALT_Albumin_Ratio",
+    "Total_Bilirubin_log",
+    "Direct_Bilirubin",
+    "Direct_Bilirubin_log",
+    "Total_Bilirubin",
+    "Bilirubin_Ratio",
+    "Aspartate_Aminotransferase_log",
+    "Aspartate_Aminotransferase",
+    "Alamine_Aminotransferase",
+    "Albumin_Protein_Ratio"
+  ],
+  "optimal_threshold": 0.3768
+}

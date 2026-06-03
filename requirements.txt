@@ -3,3 +3,9 @@ pandas
 numpy
 scikit-learn
 joblib
+shap
+lime
+matplotlib
+imbalanced-learn
+seaborn
+xgboost

@@ -1,0 +1,58 @@
+{
+  "project": "Liver Disease Prediction",
+  "dataset": "ILPD \u2014 UCI Repository",
+  "n_samples": 570,
+  "n_features_final": 14,
+  "selected_features": [
+    "Enzyme_Load",
+    "Bili_AST_Interaction",
+    "Bilirubin_Protein",
+    "Alamine_Aminotransferase_log",
+    "ALT_Albumin_Ratio",
+    "Total_Bilirubin_log",
+    "Direct_Bilirubin",
+    "Direct_Bilirubin_log",
+    "Total_Bilirubin",
+    "Bilirubin_Ratio",
+    "Aspartate_Aminotransferase_log",
+    "Aspartate_Aminotransferase",
+    "Alamine_Aminotransferase",
+    "Albumin_Protein_Ratio"
+  ],
+  "target_encoding": {
+    "1": "Liver Disease",
+    "0": "No Liver Disease"
+  },
+  "gender_encoding": {
+    "Female": 0,
+    "Male": 1
+  },
+  "pipeline_steps": "StandardScaler \u2192 SMOTEENN \u2192 Classifier (inside ImbPipeline)",
+  "balancing_method": "SMOTEENN",
+  "ensemble_method": "Soft Voting",
+  "optimal_threshold": 0.3065252632203795,
+  "base_models": [
+    "Random Forest",
+    "Logistic Regression",
+    "Decision Tree",
+    "KNN",
+    "SVM",
+    "XGBoost"
+  ],
+  "tuning_methods": {
+    "RF": "RandomizedSearchCV",
+    "XGBoost": "RandomizedSearchCV",
+    "LR": "GridSearchCV",
+    "SVM": "GridSearchCV",
+    "KNN": "GridSearchCV",
+    "DT": "GridSearchCV"
+  },
+  "final_test_metrics": {
+    "accuracy": 0.7456,
+    "f1_score": 0.8079,
+    "precision": 0.8714,
+    "recall": 0.7531,
+    "roc_auc": 0.8021,
+    "mcc": 0.4475
+  }
+}

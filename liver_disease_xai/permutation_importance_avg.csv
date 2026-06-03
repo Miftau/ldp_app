@@ -1,0 +1,15 @@
+,Avg_ROC_AUC_Drop
+Enzyme_Load,0.05719541089911461
+ALT_Albumin_Ratio,0.00848089953028224
+Direct_Bilirubin,0.006937689653739049
+Total_Bilirubin,0.005155464106081401
+Total_Bilirubin_log,0.004446730681298576
+Direct_Bilirubin_log,0.0035779606767261233
+Aspartate_Aminotransferase,0.00236937273974311
+Aspartate_Aminotransferase_log,0.0019474581202976128
+Bili_AST_Interaction,0.0015452882736833515
+Bilirubin_Protein,0.000269152429646267
+Alamine_Aminotransferase_log,-0.0007160078147732517
+Bilirubin_Ratio,-0.001466309182358558
+Alamine_Aminotransferase,-0.0019360269360269439
+Albumin_Protein_Ratio,-0.004434260298457819
